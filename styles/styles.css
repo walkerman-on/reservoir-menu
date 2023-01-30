@@ -125,6 +125,11 @@ body {
   text-align: center;
 }
 
+.main-navigation-button:disabled {
+  background: var(--nav-btn-hover-color); 
+  color: var(--fuel-link-color)
+}
+
 .main-navigation-button:hover {
   background: var(--nav-btn-hover-color);
 }
@@ -260,30 +265,6 @@ body {
   background: var(--light-blue-color);
 }
 
-.flask-fuel-level_small {
-  height: calc(var(--height-reservoir-square) * 0.18);
-  margin-top: calc(var(--height-reservoir-square) * 0.82);
-  background: var(--light-blue-color);
-}
-
-.flask-fuel-level_medium {
-  height: calc(var(--height-reservoir-square) * 0.68);
-  margin-top: calc(var(--height-reservoir-square) * 0.32);
-  background: var(--light-blue-color);
-}
-
-.flask-fuel-level_large {
-  height: calc(var(--height-reservoir-square) * 0.75);
-  margin-top: calc(var(--height-reservoir-square) * 0.25);
-  background: var(--light-blue-color);
-}
-
-.flask-fuel-level_largest {
-  height: calc(var(--height-reservoir-square) * 0.98);
-  margin-top: calc(var(--height-reservoir-square) * 0.02);
-  background: var(--light-blue-color);
-}
-
 .reservoir-info {
   display: flex;
   flex-direction: row;
@@ -300,8 +281,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 6px;
   background: var(--medium-dark-color);
 }
@@ -313,9 +294,28 @@ body {
 
 
 /* === footer === */
-
 .footer-page {
   background-color: var(--medium-dark-alfa50-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding-left: 25px;
+}
+
+.footer-input {
+  height: 32px;
+  width: 60px;
+  padding: 0 10px;
+  border: 1px solid var(--background-color);
+  border-radius: 6px;
+  background-color: var(--medium-dark-color);
 }
 
 .footer-info-list {
