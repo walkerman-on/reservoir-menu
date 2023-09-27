@@ -2,9 +2,7 @@
 The tank's level of petroleum products is set by an array of data (data.json). There is a functional such as filtration of tanks by the type of petroleum product, redrawing the color of the tank depending on the selected range of the mass of petroleum products.
 
 ## 👾 Demo
-
-https://github.com/walkerman-on/reservoir-menu/assets/82907949/a7a02cf9-727c-4518-8a0b-ec3ae3c33663
-
+https://github.com/walkerman-on/reservoir-menu/assets/82907949/fc2b3647-e37b-4a28-9584-a3b7db67b354
 
 ## 🚀 Usage
 Run `Live Server` on your machine
