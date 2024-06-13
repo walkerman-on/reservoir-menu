@@ -1,13 +1,56 @@
-# 🛢️ Interface of fuel-reservoirs
-The tank's level of petroleum products is set by an array of data (data.json). There is a functional such as filtration of tanks by the type of petroleum product, redrawing the color of the tank depending on the selected range of the mass of petroleum products.
+## Демо
+https://github.com/walkerman-on/reservoir-menu/assets/82907949/3fa24adf-c9cd-4d86-b6e6-7eb9e75f4c9d
 
-## 👾 Demo
-https://github.com/walkerman-on/reservoir-menu/assets/82907949/fc2b3647-e37b-4a28-9584-a3b7db67b354
+---
 
-## 🚀 Usage
-Run `Live Server` on your machine
+## Описание проекта
+Интерфейс состояния топливных резервуаров для компании «Автоматика-Сервис». Разработан интерфейс со следующим функционалом:
+- [x] Фильтрация резервуаров по типу нефтепродукта
+- [x] Фильтрация резервуаров в зависимости от выбранного диапазона массы нефтепродуктов
+- [x] Перерисовка цвета резервуара в зависимости от выбранного диапазона массы нефтепродукта:
+- 200 < масса < 800 - 🟢 цвет
+- масса < 200 или масса > 800 - 🔴 цвет
 
-## 💻 Languages and Tools:
-<p align="left"><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> </p>
- 
+Cтруктура данных резервуаров задается массивом данных и выглядит примерно следующим образом:
+```
+[
+	{
+		"name": "Reservoir_1",
+		"volume": 500
+	},
+	{
+		"name": "Reservoir_2",
+		"volume": 700
+	},
+	...
+]
+```
+---
+
+## Запуск проекта
+Для запуска на локальном хосте с использованием Live Server, вам потребуется выполнить несколько шагов:
+
+- Установить расширение Live Server для вашего редактора кода
+- Найти файл index.html
+- Нажать правой кнопкой мыши на этот файл в редакторе кода
+- В контекстном меню выберать "Open with Live Server" или аналогичный пункт (название может немного отличаться в зависимости от вашего редактора).
+Live Server автоматически запустит ваш сайт на локальном сервере и откроет его в вашем браузере по умолчанию
+
+Если вы хотите использовать Live Server без редактора кода, вы также можете установить его глобально через npm и запустить его из командной строки:
+
+- `npm install -g live-server` - устанавливаем локальный сервер
+- `live-server` - запуск локального сервера
+
+---
+
+### Работа с данными
+
+Данные берутся из файла `data.json`
+
+---
+
+## Технологии
+HTML, CSS, JavaScript
+
+---
 
